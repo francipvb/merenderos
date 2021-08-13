@@ -9,7 +9,20 @@ python = "^3.8"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+black = "^21.7b0"
+flake8 = "^3.9.2"
+mypy = "^0.910"
+pytest-cov = "^2.12.1"
+pytest-sugar = "^0.9.4"
+flake8-isort = "^4.0.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+max_line_length = 100
+
+[tool.isort]
+profile = "black"
+line_length = 100
